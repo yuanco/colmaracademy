@@ -56,6 +56,10 @@ p {
   align-items: center;
 }
 
+.mobile-header {
+  display: none;
+}
+
 .header nav {
   padding-right: 1.5rem;
 }
@@ -93,6 +97,27 @@ nav ul li {
 
 nav ul li a {
   color: darkgray;
+}
+
+/* Mobile Header */
+@media screen and (max-width: 480px) {
+  .header {
+    display: none;
+  }
+
+  .mobile-header {
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* --- Banner --- */
