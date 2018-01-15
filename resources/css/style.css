@@ -432,6 +432,7 @@ nav ul li a {
 }
 
 .info-left video {
+  cursor: pointer;
   width: 100%;
   padding: 2rem 1.5rem;
 }
@@ -458,6 +459,7 @@ nav ul li a {
   }
 
   .thesis-mobile video {
+    cursor: pointer;
     padding-bottom: 1.5rem;
   }
 }
