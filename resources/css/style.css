@@ -11,9 +11,13 @@ body {
 
 html {
   font-size: 16px;
+  color: #4d4d4d;
 }
 
-h1,
+h1 {
+  font-weight: 750;
+}
+
 h2,
 h3 {
   font-weight: bold;
@@ -24,21 +28,35 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h3 {
   font-size: 1.25rem;
 }
 
+p {
+  color: #606060;
+}
+
 a {
   text-decoration: none;
 }
 
-p {
-
+/* -- Colors -- */
+.mid-gray {
+  color: #a0a0a0;
 }
 
+.tar-gray {
+  color: #666666;
+}
+
+.link-blue {
+  color: #0099ff;
+}
+
+/* -- Container --*/
 .container-left {
   max-width: 60%;
   margin: 0;
@@ -83,12 +101,13 @@ p {
 }
 
 #colmar {
+  color: black;
   font-weight: bold;
 }
 
 #academy {
-  font-weight: bold;
-  color: lightgray;
+  font-weight: 500;
+  color: #c0c0c0;
 }
 
 nav ul li {
@@ -97,7 +116,8 @@ nav ul li {
 }
 
 nav ul li a {
-  color: darkgray;
+  font-size: .875rem;
+  font-weight: 500;
 }
 
 /* Mobile Header */
@@ -146,7 +166,8 @@ nav ul li a {
 }
 
 .button {
-  background-color: darkgray;
+  font-size: 1.25rem;
+  background-color: #4d4d4d;
   text-align: center;
   padding: 0.5rem 0;
   width: 80%;
@@ -242,6 +263,7 @@ nav ul li a {
   padding: 1rem;
 }
 
+
 #top-image {
   padding: 1rem;
 }
@@ -256,6 +278,10 @@ nav ul li a {
 
 .text p {
   padding: 0.5rem 0;
+}
+
+.text a {
+  font-size: 0.875rem;
 }
 
 .guest {
@@ -352,13 +378,15 @@ nav ul li a {
 }
 
 .description h4 {
-  color: darkgray;
   padding: 0.5rem 0;
 }
 
 .description p {
-  color: darkgray;
   padding-bottom: 1.5rem;
+}
+
+.description a {
+
 }
 
 .lower {
@@ -399,7 +427,7 @@ nav ul li a {
   }
 
   .description a {
-    color: black;
+    color: #505050;
   }
 
 }
@@ -415,6 +443,10 @@ nav ul li a {
 .info-left video {
   width: 90%;
   padding: 2rem 1.5rem;
+}
+
+.info-text, .text p {
+  font-size: 0.875rem;
 }
 
 .thesis-mobile {
@@ -469,7 +501,6 @@ nav ul li a {
   }
 
   .copyright {
-    color: darkgray;
     padding: 1rem;
   }
 }
