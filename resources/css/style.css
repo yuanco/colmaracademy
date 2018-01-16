@@ -409,16 +409,14 @@ nav ul li a {
   }
 
   .description {
+    display: block;
     background-color: lightgray;
     margin-bottom: 0.5rem;
   }
 
   .description h3 {
-    padding: 1rem 1rem 1.5rem;
-  }
-
-  .description a {
     color: #505050;
+    padding: 1rem 1rem 1.5rem;
   }
 
 }
