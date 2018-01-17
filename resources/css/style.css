@@ -1,11 +1,11 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
   line-height: 1.4;
 }
 
@@ -41,6 +41,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* -- Colors -- */
@@ -55,6 +56,7 @@ a {
 .link-blue {
   color: #0099ff;
 }
+
 
 /* -- Container --*/
 .container-left {
@@ -165,7 +167,12 @@ nav ul li a {
 }
 
 .button a {
+  display: block;
   color: white;
+}
+
+.button a:hover {
+  color: #d4d4d4;
 }
 
 /* Mobile Banner */
@@ -238,10 +245,6 @@ nav ul li a {
   padding-top: 1rem;
 }
 
-#top-32 {
-  padding-top: 2rem;
-}
-
 .content {
   display: flex;
   justify-content: flex-start;
@@ -273,6 +276,10 @@ nav ul li a {
 
 .text a {
   font-size: 0.875rem;
+}
+
+.text a:hover {
+  color: mediumblue;
 }
 
 .guest {
@@ -338,7 +345,12 @@ nav ul li a {
 .course-content {
   width: 33%;
   background-color: white;
+  transition: opacity 200ms linear 100ms;
 
+}
+
+.course-content a:hover {
+  opacity: 0.7;
 }
 
 .middle {
@@ -436,6 +448,14 @@ nav ul li a {
 
 .info-text p {
   font-size: 0.875rem;
+}
+
+#top-32 {
+  padding-top: 2rem;
+}
+
+#top-32 a:hover {
+  opacity: 0.7;
 }
 
 .thesis-mobile {
