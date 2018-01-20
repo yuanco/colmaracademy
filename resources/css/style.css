@@ -164,6 +164,7 @@ nav ul li a {
   background-color: #4d4d4d;
   text-align: center;
   width: 80%;
+  transition: background 150ms ease-in-out 100ms;
 }
 
 .button a {
@@ -173,8 +174,8 @@ nav ul li a {
   text-align: center;
 }
 
-.button a:hover {
-  background-color: #606060;
+.button:hover {
+  background: #6d6d6d;
 }
 
 
@@ -257,7 +258,7 @@ nav ul li a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
+  transition: opacity 150ms ease-in-out 100ms;
 }
 
 .image {
@@ -372,11 +373,11 @@ nav ul li a {
 .course {
   width: 33%;
   background-color: white;
-  transition: opacity 200ms linear 100ms;
+  transition: opacity 150ms ease-in-out 100ms;
 }
 
 .course:hover {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .middle {
