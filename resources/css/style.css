@@ -249,6 +249,7 @@ nav ul li a {
 
 
 #top-16 {
+  height: 100%;
   padding-top: 1rem;
 }
 
@@ -256,10 +257,15 @@ nav ul li a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 }
 
-.content img {
+.image {
   width: 35%;
+}
+
+.image img {
+  width: 100%;
   padding: 1rem;
 }
 
@@ -369,8 +375,7 @@ nav ul li a {
   transition: opacity 200ms linear 100ms;
 }
 
-
-.course a:hover {
+.course:hover {
   opacity: 0.7;
 }
 
@@ -428,6 +433,7 @@ nav ul li a {
   }
 
   .description {
+    width: 100%;
     background-color: lightgray;
     margin-bottom: 0.5rem;
   }
@@ -437,13 +443,19 @@ nav ul li a {
   }
 
   .description a {
-    color: #505050;
+    display: block;
+  }
+
+  .description:hover {
+    background-color: #808080;
+
   }
 
 }
 
 /* --- Thesis --- */
 .thesis-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -464,7 +476,7 @@ nav ul li a {
   padding-top: 2rem;
 }
 
-#top-32 a:hover {
+.content:hover {
   opacity: 0.7;
 }
 
