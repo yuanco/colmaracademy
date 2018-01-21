@@ -6,6 +6,17 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+
+    <!-- Script -->
+    <script type="text/javascript">
+    function playPause() {
+        var myVideo = document.getElementById("video");
+        if (myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -242,12 +253,16 @@
       <h2 class="title">Thesis Exhibits</h2>
       <div class="thesis-container">
         <div class="info-left container-left">
-          <video autoplay loop poster="resources/videos/thesis.jpg">
-            <source src="resources/videos/thesis.mp4" type="video/mp4">
-            <source src="resources/videos/thesis.webm" type="video/webm">
-              Your browser doesn't support HTML5 video.
-              <a href="resources/videos/thesis.mp4">Download</a> the video instead.
-          </video>
+          <div class="video-link">
+              <video id="video" onclick="playPause()">
+                <source src="resources/videos/thesis.mp4" type="video/mp4">
+                <source src="resources/videos/thesis.webm" type="video/webm">
+              </video>
+              <span class="play">
+                  <span></span>
+              </span>
+          </div>
+
           <div class="info-text">
             <h3>Reimagine Urban</h3>
             <p>"Sed ornare in urna a finibus. Praesent vel lectus id sapien aliquet consectetur. Pellentesque cursus quam sit amet nisl rhoncus ultricies. Morbi aliquam erat quis sapien efficitur, sed commodo metus cursus. Nullam tincidunt neque ante, non tristique nunc hendrerit nec."</p>
