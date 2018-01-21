@@ -23,7 +23,7 @@
 
     function playVideo() {
         var myVideo = document.getElementById("video");
-      var button = document.getElementById("play-video");
+        var button = document.getElementById("play-video");
         if (myVideo.paused) {
             myVideo.play();
             button.style.visibility = "hidden";
@@ -33,6 +33,34 @@
             button.style.visibility = "visible";
           }
     }
+
+    function playButtonMobile() {
+      var myVideo = document.getElementById("video-mobile");
+      var button = document.getElementById("play-video-mobile");
+      if (myVideo.paused) {
+          myVideo.play();
+          button.style.visibility = "hidden";
+        }
+      else {
+          myVideo.pause();
+        }
+    }
+
+
+    function playVideoMobile() {
+        var myVideo = document.getElementById("video-mobile");
+        var button = document.getElementById("play-video-mobile");
+        if (myVideo.paused) {
+            myVideo.play();
+            button.style.visibility = "hidden";
+          }
+        else {
+            myVideo.pause();
+            button.style.visibility = "visible";
+          }
+    }
+
+
     </script>
   </head>
   <body>
@@ -316,10 +344,15 @@
   <!-- Mobile Thesis -->
   <div class="thesis-mobile">
     <h2 class="title">Thesis Exhibits</h2>
-    <video autoplay muted loop playsinline poster="resources/videos/thesis.jpg">
-      <source src="resources/videos/thesis.mp4" type="video/mp4">
-      <source src="resources/videos/thesis.webm" type="video/webm">
-    </video>
+    <div class="video-link">
+        <video id="video-mobile" onclick="playVideoMobile()" playsinline poster="resources/videos/thesis.jpg">
+          <source src="resources/videos/thesis.mp4" type="video/mp4">
+          <source src="resources/videos/thesis.webm" type="video/webm">
+        </video>
+        <span id="play-video-mobile" onclick="playButtonMobile()" class="play">
+            <span></span>
+        </span>
+    </div>
   </div>
 
     <!-- Footer -->

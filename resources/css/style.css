@@ -524,17 +524,23 @@ nav ul li a {
   }
 
   .thesis-mobile {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .thesis-mobile video {
-    cursor: pointer;
+  .video-link {
+      display: inline-block;
+      position: relative;
+  }
+
+  #video-mobile {
     width: 100%;
     height: auto;
     padding-bottom: 1.5rem;
+    vertical-align: bottom;
   }
 }
 
