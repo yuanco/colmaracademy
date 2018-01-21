@@ -469,8 +469,7 @@ nav ul li a {
     position: relative;
 }
 
-video {
-
+#video {
   width: 100%;
   height: auto;
   padding: 2rem 1.5rem;
@@ -479,7 +478,7 @@ video {
 
 /* Play button */
 .play {
-   cursor: pointer;  
+    cursor: pointer;
     position:absolute;
     width:3rem;
     height:3rem;

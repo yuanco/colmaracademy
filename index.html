@@ -9,12 +9,29 @@
 
     <!-- Script -->
     <script type="text/javascript">
-    function playPause() {
+    function playButton() {
+      var myVideo = document.getElementById("video");
+      var button = document.getElementById("play-video");
+      if (myVideo.paused) {
+          myVideo.play();
+          button.style.visibility = "hidden";
+        }
+      else {
+          myVideo.pause();
+        }
+    }
+
+    function playVideo() {
         var myVideo = document.getElementById("video");
-        if (myVideo.paused)
+      var button = document.getElementById("play-video");
+        if (myVideo.paused) {
             myVideo.play();
-        else
+            button.style.visibility = "hidden";
+          }
+        else {
             myVideo.pause();
+            button.style.visibility = "visible";
+          }
     }
     </script>
   </head>
@@ -254,11 +271,11 @@
       <div class="thesis-container">
         <div class="info-left container-left">
           <div class="video-link">
-              <video id="video" onclick="playPause()">
+              <video id="video" onclick="playVideo()">
                 <source src="resources/videos/thesis.mp4" type="video/mp4">
                 <source src="resources/videos/thesis.webm" type="video/webm">
               </video>
-              <span class="play">
+              <span id="play-video" onclick="playButton()" class="play">
                   <span></span>
               </span>
           </div>
